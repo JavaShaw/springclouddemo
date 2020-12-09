@@ -7,11 +7,14 @@
         <artifactId>springclouddemo</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
     <groupId>com.joeshaw</groupId>
     <artifactId>eureka-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>eureka-server</name>
+    <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>
+
 
     <dependencies>
         <dependency>

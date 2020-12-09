@@ -9,9 +9,9 @@
 	</parent>
 
 	<groupId>com.joeshaw</groupId>
-	<artifactId>service-ribbon</artifactId>
+	<artifactId>eureka-client2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>service-ribbon</name>
+	<name>eureka-client</name>
 	<description>Demo project for Spring Boot</description>
 
 	<dependencies>
@@ -23,15 +23,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-		</dependency>
-
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.cloud</groupId>-->
-<!--			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>-->
-<!--		</dependency>-->
 	</dependencies>
 
 	<build>

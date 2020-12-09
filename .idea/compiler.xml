@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="service-ribbon" />
+        <module name="eureka-client2" />
+        <module name="service-fegin" />
         <module name="eureka-client" />
         <module name="eureka-server" />
-        <module name="service-ribbon" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,7 +21,9 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="enreka-server" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
+      <module name="eureka-client2" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="service-fegin" options="-parameters" />
       <module name="service-ribbon" options="-parameters" />
     </option>
   </component>
