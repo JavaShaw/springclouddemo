@@ -9,9 +9,18 @@ spring:
     name: service-zuul
 zuul:
   routes:
-    api-a:
-      path: /api/v1/sr/**
-      serviceId: service-ribbon
-    api-b:
-      path: /api/v1/sf/**
-      serviceId: service-feign
+    # 对应服务名 : 路由
+    service-ribbon: /apigateway/sr/**
+    service-feign: /apigateway/sf/**
+
+#    api-a:
+#      path: /api/v1/sr/**
+#      serviceId: service-ribbon
+#    api-b:
+#      path: /api/v1/sf/**
+#      serviceId: service-feign
+      #处理请求头为空的情况
+  sensitive-headers:
+  #统一入口为上面配置.其他匹配的入口忽略
+  ignored-patterns: /service-ribbon/**
+

@@ -14,6 +14,7 @@
         <module name="config-client" />
         <module name="eureka-client2" />
         <module name="eureka-server" />
+        <module name="service-feign" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -29,6 +30,7 @@
       <module name="eureka-client2" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="service-fegin" options="-parameters" />
+      <module name="service-feign" options="-parameters" />
       <module name="service-ribbon" options="-parameters" />
       <module name="service-zuul" options="-parameters" />
     </option>
