@@ -7,9 +7,19 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/JavaShaw/springcloudConfig/
+          uri: https://github.com/joeshaw123/springcloudConfig/
           search-paths: config
           username:
           password:
-
       label: master
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: bus-refresh
